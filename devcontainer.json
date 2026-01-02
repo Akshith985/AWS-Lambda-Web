@@ -1,0 +1,12 @@
+{
+  "name": "AWS-Web-Development",
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:1": {
+      "version": "latest"
+    }
+  },
+  "forwardPorts": [5173, 4566],
+  "postCreateCommand": "npm install -g aws-cli-v2",
+  "remoteUser": "codespace"
+}
